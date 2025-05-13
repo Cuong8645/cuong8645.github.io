@@ -1,79 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuong's Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">Home</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">About</a></li>
+                    <li><a href="#projects-section">Projects</a></li>
+                    <li><a href="#experience-education-section">Resume</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <section id="hero" class="container">
+        <div class="hero-content">
+            <h1>Hi, I'm <span id="dynamic-title"></span></h1>
+            <p>Với niềm đam mê về dữ liệu, phân tích thống kê và trực quan hóa, tôi luôn tìm kiếm những hiểu biết sâu sắc từ dữ liệu để đưa ra quyết định sáng suốt và tối đa hóa tác động. Tôi có kinh nghiệm làm việc với các bên liên quan không thuộc lĩnh vực kỹ thuật và cộng tác với các nhóm đa chức năng.</p>
+            <a href="https://drive.google.com/uc?export=download&id=14YEo2eSIoxeVHX8Rjnrh1Bjyf1jkXCs_" download="DataAnalyst_NgoQuocCuongCV.pdf" class="button">CV Download</a>
+        </div>
+        <div class="hero-image">
+            <img src="person.JPG" alt="Ảnh chân dung của bạn" width="350" height="auto">
+        </div>
+    </section>
 
-  <!-- Hero Section -->
-  <header id="hero">
-    <div class="container">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Data Analyst | Web Developer</p>
-    </div>
-  </header>
+    <section id="projects-section" class="container">
+        <h2>My Insights</h2>
+        <div class="project-slider">
+            <button class="slider-arrow prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="slider-image">
+                    <img src="C:/Users/ngoqu/Desktop/New folder/a.png" alt="Slide">
+            </div>
+            <button class="slider-arrow next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Hi, I'm a passionate Data Analyst with experience in analyzing data and building insights to solve real-world problems. I love working with data visualization tools and deriving insights.</p>
-    </div>
-  </section>
+    <section id="experience-education-section" class="container">
+        <div class="experience">
+            <h2>Projects</h2>
+            <div class="experience-item">
+                <div class="year">2024</div>
+                <h3>Marketing Campaign Analyst</h3>
+                <p>This project leverages comprehensive data on marketing campaign performance, serving as a central tool for analyzing key metrics, uncovering valuable insights, and empowering data-driven decisions and maximize ROI.</p>
+            </div>
+            <div class="experience-item">
+                <div class="year">2024</div>
+                <h3>Shop Customer Analysis</h3>
+                <p>This project analyzes rich customer-level Power BI datasets, tapping into over 500 columns to uncover key insights into customer demographics (age, gender, annual income, profession, and spending score), enhance customer behavior and drive the shop's growth.</p>
+            </div>
+            <div class="experience-item">
+                <div class="year">2024</div>
+                <h3>Sale & Shipment Analysis</h3>
+                <p>This dashboard offers a comprehensive view of sales trends & shipment analysis. Key features include YOY sales, top-performing sales executives, and region-wise performance & shipment delay tracking to enhance customer relationships & operational efficiency.</p>
+            </div>
+            <div class="experience-item">
+                <div class="year">2024</div>
+                <h3>Carbon Emission Analysis</h3>
+                <p>This project delves into the fascinating realm of carbon emission analysis across various products. The primary focus of this analysis is to investigate and compare the carbon footprints of products across different stages of production.</p>
+            </div>
+            <div class="experience-item">
+                <div class="year">2024</div>
+                <h3>Market Basket Analysis</h3>
+                <p>This project identifies products often bought together, with applications in Retail. Optimize product bundling E-commerce; Enhance recommendation systems by suggesting items that are often purchased together.</p>
+            </div>
+            <div class="experience-item">
+                <div class="year">2024</div>
+                <h3>Customer Behavior Analysis</h3>
+                <p>This project focuses on analyzing customer demographics and purchasing behavior.</p>
+            </div>
+            <div class="experience-item">
+                <div class="year">2024</div>
+                <h3>Data cleaning and calculating correlations</h3>
+                <p>Practice data cleaning and calculating correlations. The project includes handling missing values and scheduling for data cleaning processes.</p>
+            </div>
+        </div>
+        <div class="education">
+            <h2>Educations</h2>
+            <div class="education-item">
+                <div class="year">2024</div>
+                <h3>Swiss Academy</h3>
+                <p>Data Analysis</p>
+            </div>
+            <div class="education-item">
+                <div class="year">2017</div>
+                <h3>Open University</h3>
+                <p>Business Administration</p>
+            </div>
+            <h2>Educations</h2>
+            <div class="education-item">
+                <div class="year">2024</div>
+                <h3>Swiss Academy</h3>
+                <p>Data Analysis</p>
+            </div>
+            <div class="education-item">
+                <div class="year">2017</div>
+                <h3>Open University</h3>
+                <p>Business Administration</p>
+            </div>
+        </div>
+        
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>Data analysis project using Python and Tableau</p>
-      </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>SQL database management and analysis</p>
-      </div>
-    </div>
-  </section>
+    <footer id="contact-section">
+        <div class="container">
+            <h2>Contact Via</h2>
+            <div class="social-links">
+                <a href="mailto:ngoquoccuong0604@gmail.com"><img src="https://www.clipartmax.com/png/small/31-316827_gmail-icon-gmail-icon.png" alt="Email"></a>
+                <a href="https://www.linkedin.com/in/cuongngoq/"><img src="https://www.clipartmax.com/png/small/97-974798_%E3%80%8Clinkedin-logo%E3%80%8D%E3%81%AE%E7%94%BB%E5%83%8F%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C-linkedin-symbol-for-word.png"  alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form action="#" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 My Portfolio | <a href="https://github.com/yourusername" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
