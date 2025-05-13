@@ -1,119 +1,296 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
-nav {
-  background: #333;
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-header {
-  background: #f4f4f4;
-  padding: 80px 0;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 36px;
-  color: #333;
-}
-
-header p {
-  font-size: 20px;
-  color: #555;
-}
-
-section {
-  padding: 60px 0;
-  background: #f9f9f9;
-}
-
-section h2 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 30px;
+    font-family: 'Lato',sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b2a99e;
+    color: #333;
+    line-height: 1.6;
 }
 
 .container {
-  width: 80%;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.project-card {
-  background: white;
-  padding: 20px;
-  margin: 10px 0;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-form label {
-  margin: 10px 0 5px;
+header .logo {
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #007bff;
 }
 
-form input,
-form textarea {
-  padding: 10px;
-  margin: 5px 0 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-form button {
-  background: #333;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+header nav ul li {
+    margin-left: 20px;
 }
 
-form button:hover {
-  background: #555;
+header nav ul li a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #333; /* Màu chữ mặc định */
+    transition: color 0.3s ease; /* Thêm hiệu ứng chuyển màu mượt mà */
+}
+
+header nav ul li a:hover {
+    color: #007bff; /* Màu chữ khi di chuột vào */
+}
+
+header nav ul li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333; /* Màu chữ mặc định */
+    font-size: 1em;
+    transition: color 0.3s ease; /* Thêm hiệu ứng chuyển màu mượt mà */
+}
+
+header nav ul li button:hover {
+    color: #007bff; /* Màu chữ khi di chuột vào */
+}
+
+#hero {
+    display: flex;
+    padding: 40px 0;
+    align-items: center;
+}
+
+#hero .hero-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#hero .hero-image {
+    flex: 1;
+    margin-left: 100px;
+}
+
+#hero .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#projects-section {
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+#projects-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.project-slider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto; /* Căn giữa khối slider */
+}
+
+.slider-image {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
+}
+
+.slider-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block; /* Loại bỏ khoảng trắng thừa dưới hình ảnh */
+    margin: 0 auto; /* Căn giữa hình ảnh */
+    transition: opacity 0.5s ease-in-out; /* Hoặc hiệu ứng trượt của bạn */
+    border: 1px solid black; /* Thêm viền đen 1 pixel */
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 45%; /* Hoặc 52%, thử các giá trị gần 50% */
+    transform: translateY(-50%);
+    background-color: transparent; 
+    color: Black; /* Màu mũi tên trắng */
+    border: none;
+    width: 40px; /* Điều chỉnh kích thước nút */
+    height: 40px; /* Điều chỉnh kích thước nút */
+    font-size: 1.2em; /* Điều chỉnh kích thước mũi tên */
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
+    display: flex; /* Căn giữa mũi tên bên trong */
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Hiệu ứng đổi màu mượt mà */
+}
+
+.slider-arrow.prev {
+    left: -40px; /* Đẩy mũi tên sang trái, bạn có thể điều chỉnh giá trị này */
+}
+
+.slider-arrow.next {
+    right: -40px; /* Đẩy mũi tên sang phải, bạn có thể điều chỉnh giá trị này */
+}
+
+.slider-arrow:hover {
+    color: #007bff; /* Đổi màu mũi tên khi di chuột (tùy chọn) */
+}
+
+.slider-dots {
+    text-align: center;
+    margin-top: 10px; /* Tạo khoảng cách giữa hình ảnh và dấu chấm */
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #007bff;
+}
+
+#experience-education-section {
+    display: flex;
+    padding: 40px 0;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.experience {
+    margin-left: 180px;
+}
+
+.education {
+    margin-left: 50px;
+}
+
+#experience-education-section > div {
+    flex: 1;
+    padding: 20px;
+}
+
+#experience-education-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.experience-item, .education-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.experience-item:last-child, .education-item:last-child {
+    border-bottom: none;
+}
+
+.year {
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.experience-item h3, .education-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 footer {
-  background: #333;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
 }
 
-footer a {
-  color: #f9f9f9;
-  text-decoration: none;
+footer h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #eee;
+}
+
+body.dark-mode header {
+    background-color: #252525;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode header nav ul li a,
+body.dark-mode header nav ul li button {
+    color: #eee;
+}
+
+body.dark-mode #projects {
+    background-color: #252525;
+}
+
+body.dark-mode #experience-education-section {
+    background-color: #333;
+}
+
+body.dark-mode .year {
+    background-color: #eee;
+    color: #333;
+}
+.job-title {
+    color: #007bff; /* Thay 'green' bằng màu bạn muốn */
 }
