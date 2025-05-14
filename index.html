@@ -4,28 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuong's Portfolio </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+    
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <div class="logo">Home</div>
-            <nav>
-                <ul>
-                    <li><a href="#hero">About</a></li>
-                    <li><a href="#projects-section">Projects</a></li>
-                    <li><a href="#experience-education-section">Resume</a></li>
-                    <li><a href="#contact-section">Contact</a></li>
-                    </ul>
-            </nav>
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects-section">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience-education-section">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
-    <section id="hero" class="container">
+    <!-- <section id="hero" class="container">
         <div class="hero-content">
             <h1>Hi, I'm <span id="dynamic-title"></span></h1>
             <p>Với niềm đam mê về dữ liệu, phân tích thống kê và trực quan hóa, tôi luôn tìm kiếm những hiểu biết sâu sắc từ dữ liệu để đưa ra quyết định sáng suốt và tối đa hóa tác động. Tôi có kinh nghiệm làm việc với các bên liên quan không thuộc lĩnh vực kỹ thuật và cộng tác với các nhóm đa chức năng.</p>
@@ -34,92 +49,113 @@
         <div class="hero-image">
             <img src="person.JPG" alt="Ảnh chân dung của bạn" width="350" height="auto">
         </div>
+    </section> -->
+
+    <section id="hero" class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span id="dynamic-title">Cuong Ngo</span></h1>
+                    <p>Với niềm đam mê về dữ liệu, phân tích thống kê và trực quan hóa, tôi luôn tìm kiếm những hiểu biết sâu sắc từ dữ liệu để đưa ra quyết định sáng suốt và tối đa hóa tác động. Tôi có kinh nghiệm làm việc với các bên liên quan không thuộc lĩnh vực kỹ thuật và cộng tác với các nhóm đa chức năng.</p>
+                    <a href="https://drive.google.com/uc?export=download&id=14YEo2eSIoxeVHX8Rjnrh1Bjyf1jkXCs_" download="DataAnalyst_NgoQuocCuongCV.pdf" class="btn btn-primary">CV Download</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 order-first order-md-last">
+                <div class="hero-image">
+                    <img src="person.JPG" alt="Ảnh chân dung của bạn" class="img-fluid" style="max-width: 300px; height: auto;">
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="projects-section" class="container">
-        <h2>My Insights</h2>
-        <div class="project-slider">
-            <button class="slider-arrow prev">
+        <h2>My Insight</h2>
+        <div class="project-slider position-relative">
+            <button class="slider-arrow prev btn btn-sm position-absolute top-50 start-0 translate-middle-y ms-2">
                 <i class="fas fa-chevron-left"></i>
             </button>
-            <div class="slider-image">
-                    <img src="a.png" alt="Slide">
+            <div class="slider-image overflow-hidden">
+                <img src="a.png" alt="slide" class="img-fluid d-block w-100">
             </div>
-            <button class="slider-arrow next">
+            <button class="slider-arrow next btn btn-sm position-absolute top-50 end-0 translate-middle-y me-2">
                 <i class="fas fa-chevron-right"></i>
             </button>
-            <div class="slider-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+            <div class="slider-dots d-flex justify-content-center mt-3">
+                <span class="dot active rounded-circle me-2" style="width: 10px; height: 10px; cursor: pointer;"></span>
+                <span class="dot rounded-circle me-2" style="width: 10px; height: 10px; cursor: pointer;"></span>
+                <span class="dot rounded-circle" style="width: 10px; height: 10px; cursor: pointer;"></span>
             </div>
         </div>
     </section>
 
     <section id="experience-education-section" class="container">
-        <div class="experience">
-            <h2>Projects</h2>
-            <div class="experience-item">
-                <div class="year">2024</div>
-                <h3>Marketing Campaign Analyst</h3>
-                <p>This project leverages comprehensive data on marketing campaign performance, serving as a central tool for analyzing key metrics, uncovering valuable insights, and empowering data-driven decisions and maximize ROI.</p>
-            </div>
-            <div class="experience-item">
-                <div class="year">2024</div>
-                <h3>Shop Customer Analysis</h3>
-                <p>This project analyzes rich customer-level Power BI datasets, tapping into over 500 columns to uncover key insights into customer demographics (age, gender, annual income, profession, and spending score), enhance customer behavior and drive the shop's growth.</p>
-            </div>
-            <div class="experience-item">
-                <div class="year">2024</div>
-                <h3>Sale & Shipment Analysis</h3>
-                <p>This dashboard offers a comprehensive view of sales trends & shipment analysis. Key features include YOY sales, top-performing sales executives, and region-wise performance & shipment delay tracking to enhance customer relationships & operational efficiency.</p>
-            </div>
-            <div class="experience-item">
-                <div class="year">2024</div>
-                <h3>Carbon Emission Analysis</h3>
-                <p>This project delves into the fascinating realm of carbon emission analysis across various products. The primary focus of this analysis is to investigate and compare the carbon footprints of products across different stages of production.</p>
-            </div>
-            <div class="experience-item">
-                <div class="year">2024</div>
-                <h3>Market Basket Analysis</h3>
-                <p>This project identifies products often bought together, with applications in Retail. Optimize product bundling E-commerce; Enhance recommendation systems by suggesting items that are often purchased together.</p>
-            </div>
-            <div class="experience-item">
-                <div class="year">2024</div>
-                <h3>Customer Behavior Analysis</h3>
-                <p>This project focuses on analyzing customer demographics and purchasing behavior.</p>
-            </div>
-            <div class="experience-item">
-                <div class="year">2024</div>
-                <h3>Data cleaning and calculating correlations</h3>
-                <p>Practice data cleaning and calculating correlations. The project includes handling missing values and scheduling for data cleaning processes.</p>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="experience">
+                    <h2>Projects  <i class="fa-solid fa-database"></i></h2>
+                    <div class="experience-item">
+                        <div class="year">2024</div>
+                        <h3>Marketing Campaign Analyst</h3>
+                        <p>This project leverages comprehensive data on marketing campaign performance, serving as a central tool for analyzing key metrics, uncovering valuable insights, and empowering data-driven decisions and maximize ROI.</p>
+                    </div>
+                    <div class="experience-item">
+                        <div class="year">2024</div>
+                        <h3>Shop Customer Analysis</h3>
+                        <p>This project analyzes rich customer-level Power BI datasets, tapping into over 500 columns to uncover key insights into customer demographics (age, gender, annual income, profession, and spending score), enhance customer behavior and drive the shop's growth.</p>
+                    </div>
+                    <div class="experience-item">
+                        <div class="year">2024</div>
+                        <h3>Sale & Shipment Analysis</h3>
+                        <p>This dashboard offers a comprehensive view of sales trends & shipment analysis. Key features include YOY sales, top-performing sales executives, and region-wise performance & shipment delay tracking to enhance customer relationships & operational efficiency.</p>
+                    </div>
+                    <div class="experience-item">
+                        <div class="year">2024</div>
+                        <h3>Carbon Emission Analysis</h3>
+                        <p>This project delves into the fascinating realm of carbon emission analysis across various products. The primary focus of this analysis is to investigate and compare the carbon footprints of products across different stages of production.</p>
+                    </div>
+                    <div class="experience-item">
+                        <div class="year">2024</div>
+                        <h3>Market Basket Analysis</h3>
+                        <p>This project identifies products often bought together, with applications in Retail. Optimize product bundling E-commerce; Enhance recommendation systems by suggesting items that are often purchased together.</p>
+                    </div>
+                    <div class="experience-item">
+                        <div class="year">2024</div>
+                        <h3>Customer Behavior Analysis</h3>
+                        <p>This project focuses on analyzing customer demographics and purchasing behavior.</p>
+                    </div>
+                    <div class="experience-item">
+                        <div class="year">2024</div>
+                        <h3>Data cleaning and calculating correlations</h3>
+                        <p>Practice data cleaning and calculating correlations. The project includes handling missing values and scheduling for data cleaning processes.</p>
+                    </div>
+                </div>
+             </div>
+             <div class="col-12 col-md-6">
+                <div class="education">
+                    <h2>Educations  <i class="fa-solid fa-user-graduate"></i></h2>
+                    <div class="education-item">
+                        <div class="year">2021</div>
+                        <h3>Thu Duc College Of Technology</h3>
+                        <p>Infomation Technology</p>
+                    </div>
+                    <h2>Certificates  <i class="fa-solid fa-layer-group"></i></h2>
+                    <div class="education-item">
+                        <div class="year">2025</div>
+                        <h3>Coursera</h3>
+                        <p>Structured Query Language    <a href="https://drive.google.com/file/d/15TI0XLjMK7DG5k7zvV8dG4I-UjzWR-8G/view"><i class="fa-solid fa-book" style="color: #01060e;"></i></a></p>                       
+                        <p>Python For Data Analyst  <a href="https://drive.google.com/file/d/171r2s_X8Yvajpdg0jzR13K_mwuQ2ZKEw/view"><i class="fa-solid fa-book" style="color: #01060e;"></i></a></p>
+                        <p>Associate Data Analyst   <a href="https://drive.google.com/file/d/19EsXS7KfJDzu7gAxzZ_7GVIQkYec0Ykp/view"><i class="fa-solid fa-book" style="color: #01060e;"></i></a></p>
+                    </div>
+                    <div class="education-item">
+                        <div class="year">2024</div>
+                        <h3>Coursera</h3>
+                        <p>Google Data Analyst  <a href="https://drive.google.com/file/d/1R-NAWcjKjht_4H-k-kTYAH4x1oJQ8Om1/view"><i class="fa-solid fa-book" style="color: #01060e;"></i></a></p>                       
+                        <p>Google AI Essentials <a href="https://drive.google.com/file/d/1uSgmN33GrbAmP9-lbkPTdXR7QoJd4pG4/view"><i class="fa-solid fa-book" style="color: #01060e;"></i></a></p>
+                        <p>Google Business Intelligence <a href="https://drive.google.com/file/d/120YxXaiHJ6qPGYrgIPdMQHwmK9ANJU_7/view"><i class="fa-solid fa-book" style="color: #01060e;"></i></a></p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="education">
-            <h2>Educations</h2>
-            <div class="education-item">
-                <div class="year">2024</div>
-                <h3>Swiss Academy</h3>
-                <p>Data Analysis</p>
-            </div>
-            <div class="education-item">
-                <div class="year">2017</div>
-                <h3>Open University</h3>
-                <p>Business Administration</p>
-            </div>
-            <h2>Educations</h2>
-            <div class="education-item">
-                <div class="year">2024</div>
-                <h3>Swiss Academy</h3>
-                <p>Data Analysis</p>
-            </div>
-            <div class="education-item">
-                <div class="year">2017</div>
-                <h3>Open University</h3>
-                <p>Business Administration</p>
-            </div>
-        </div>
-        
     </section>
 
     <footer id="contact-section">

@@ -1,10 +1,14 @@
 body {
-    font-family: 'Lato',sans-serif;
+    font-family: "Playfair Display", serif;
     margin: 0;
     padding: 0;
     background-color: #b2a99e;
     color: #333;
     line-height: 1.6;
+}
+
+.h2 {
+    font-weight: bold;
 }
 
 .container {
@@ -25,8 +29,8 @@ header .container {
     align-items: center;
 }
 
-header .logo {
-    font-size: 2.0em;
+header .navbar-brand {
+    font-size: 1.5em;
     font-weight: bold;
     color: #007bff;
 }
@@ -49,7 +53,7 @@ header nav ul li a {
     transition: color 0.3s ease; /* Thêm hiệu ứng chuyển màu mượt mà */
 }
 
-header nav ul li a:hover {
+.nav-link:hover {
     color: #007bff; /* Màu chữ khi di chuột vào */
 }
 
@@ -62,7 +66,7 @@ header nav ul li button {
     transition: color 0.3s ease; /* Thêm hiệu ứng chuyển màu mượt mà */
 }
 
-header nav ul li button:hover {
+.nav-item button:hover {
     color: #007bff; /* Màu chữ khi di chuột vào */
 }
 
@@ -116,12 +120,14 @@ header nav ul li button:hover {
 #projects-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #007bff;
 }
 
 .project-slider {
     position: relative;
     max-width: 800px;
     margin: 0 auto; /* Căn giữa khối slider */
+    padding: 0 40px;
 }
 
 .slider-image {
@@ -140,10 +146,9 @@ header nav ul li button:hover {
 
 .slider-arrow {
     position: absolute;
-    top: 45%; /* Hoặc 52%, thử các giá trị gần 50% */
     transform: translateY(-50%);
     background-color: transparent; 
-    color: Black; /* Màu mũi tên trắng */
+    color: #888888; /* Màu mũi tên trắng */
     border: none;
     width: 40px; /* Điều chỉnh kích thước nút */
     height: 40px; /* Điều chỉnh kích thước nút */
@@ -158,15 +163,17 @@ header nav ul li button:hover {
 }
 
 .slider-arrow.prev {
-    left: -40px; /* Đẩy mũi tên sang trái, bạn có thể điều chỉnh giá trị này */
+    left: 0px; /* Đẩy mũi tên sang trái, bạn có thể điều chỉnh giá trị này */
 }
 
 .slider-arrow.next {
-    right: -40px; /* Đẩy mũi tên sang phải, bạn có thể điều chỉnh giá trị này */
+    right: 0px; /* Đẩy mũi tên sang phải, bạn có thể điều chỉnh giá trị này */
 }
 
 .slider-arrow:hover {
     color: #007bff; /* Đổi màu mũi tên khi di chuột (tùy chọn) */
+    background: none; /* Loại bỏ màu nền */
+    outline: none; /* Loại bỏ viền focus mặc định (tùy chọn) */
 }
 
 .slider-dots {
@@ -179,7 +186,7 @@ header nav ul li button:hover {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #bbb;
+    background-color: #888888;
     margin: 0 5px;
     cursor: pointer;
 }
@@ -193,15 +200,9 @@ header nav ul li button:hover {
     padding: 40px 0;
     background-color: #fff;
     border-radius: 10px;
+    padding-left: 120px;
 }
 
-.experience {
-    margin-left: 180px;
-}
-
-.education {
-    margin-left: 50px;
-}
 
 #experience-education-section > div {
     flex: 1;
@@ -212,11 +213,11 @@ header nav ul li button:hover {
     font-size: 2em;
     margin-bottom: 20px;
     text-align: left;
+    color: #007bff;
 }
 
 .experience-item, .education-item {
     padding: 15px 0;
-    border-bottom: 1px solid #eee;
 }
 
 .experience-item:last-child, .education-item:last-child {
@@ -293,4 +294,27 @@ body.dark-mode .year {
 }
 .job-title {
     color: #007bff; /* Thay 'green' bằng màu bạn muốn */
+}
+
+/* Căn giữa hình ảnh trên màn hình nhỏ (ví dụ: max-width 767px) */
+@media (max-width: 767px) {
+    .col-12.order-first.order-md-last .hero-image {
+        text-align: center;
+        margin-right: 100px;
+    }
+    #hero .hero-content {
+        flex: 1;
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    #projects-section {
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+    #experience-education-section {
+        border-radius: 0;
+    }
+    footer {
+        margin-top: 0;
+    }
 }
