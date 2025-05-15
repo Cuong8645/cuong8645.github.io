@@ -6,7 +6,7 @@ const nextButton = document.querySelector('.slider-arrow.next');
 const dots = document.querySelectorAll('.slider-dots .dot');
 //const sliderWrapper = document.querySelector('.slider-wrapper'); // Thêm dòng này nếu bạn có wrapper
 const images = [
-    { src: 'a.png', href: 'https://github.com/Cuong8645/cuong8645.github.io/blob/main/index.html' },
+    { src: 'HR_analyst.jpg', href: 'https://www.datacamp.com/datalab/w/ed3ce27f-0789-463b-ac60-29dc5d31332f' },
     { src: 'a.png', href: 'https://www.clipartmax.com/middle/m2i8i8m2H7i8K9K9_gmail-icon-gmail-icon/' },
     { src: 'b.png', href: 'https://imagecolorpicker.com/vi#google_vignette' }
     // Thêm các hình ảnh và URL khác của bạn vào đây
