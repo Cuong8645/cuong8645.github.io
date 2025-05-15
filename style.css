@@ -79,6 +79,7 @@ header nav ul li button {
 #hero .hero-content {
     flex: 1;
     padding-right: 20px;
+    color: #F8F8F2;
 }
 
 #hero h1 {
@@ -120,7 +121,7 @@ header nav ul li button {
 #projects-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #007bff;
+    color: #4d5761;
 }
 
 .project-slider {
@@ -213,11 +214,12 @@ header nav ul li button {
     font-size: 2em;
     margin-bottom: 20px;
     text-align: left;
-    color: #007bff;
+    color: #4d5761;
 }
 
 .experience-item, .education-item {
     padding: 15px 0;
+    color: #91867b;
 }
 
 .experience-item:last-child, .education-item:last-child {
@@ -225,7 +227,7 @@ header nav ul li button {
 }
 
 .year {
-    background-color: #333;
+    background-color: #4d5761;
     color: white;
     border-radius: 50%;
     width: 50px;
