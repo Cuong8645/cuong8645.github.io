@@ -8,7 +8,7 @@ const dots = document.querySelectorAll('.slider-dots .dot');
 const images = [
     { src: 'HR_analyst.png', href: 'https://www.datacamp.com/datalab/w/ed3ce27f-0789-463b-ac60-29dc5d31332f' },
     { src: 'bike_rent.png', href: 'https://www.kaggle.com/code/cuongngo8645/cyclistic-bikes-project' },
-    { src: 'b.png', href: 'https://imagecolorpicker.com/vi#google_vignette' }
+    { src: 'grocery_store.png', href: 'https://github.com/Cuong8645/Grocery-Store-Sales/blob/main/README.md' }
     // Thêm các hình ảnh và URL khác của bạn vào đây
 ];
 let currentIndex = 0;
