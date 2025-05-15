@@ -7,7 +7,7 @@ const dots = document.querySelectorAll('.slider-dots .dot');
 //const sliderWrapper = document.querySelector('.slider-wrapper'); // Thêm dòng này nếu bạn có wrapper
 const images = [
     { src: 'HR_analyst.png', href: 'https://www.datacamp.com/datalab/w/ed3ce27f-0789-463b-ac60-29dc5d31332f' },
-    { src: 'a.png', href: 'https://www.clipartmax.com/middle/m2i8i8m2H7i8K9K9_gmail-icon-gmail-icon/' },
+    { src: 'bike_rent.png', href: 'https://www.kaggle.com/code/cuongngo8645/cyclistic-bikes-project' },
     { src: 'b.png', href: 'https://imagecolorpicker.com/vi#google_vignette' }
     // Thêm các hình ảnh và URL khác của bạn vào đây
 ];
